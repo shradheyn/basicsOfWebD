@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/table.css">
+</head>
+<body>
+    <h1>Graphic era university</h1>
+    <img src="images/photo.jpg" alt="picc" width="300px" height="200px">
+
+    <hr>
+
+    <table id="spring">
+        <thead>
+        <tr>
+            <th>student ID</th>
+            <th>student Name</th>
+            <th>course</th>
+            <th>technology</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Shradhey</td>
+            <td>Btech</td>
+            <td>IT</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Naudiyal</td>
+            <td>Btech</td>
+            <td>CS</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Rohit</td>
+            <td>Btech</td>
+            <td>ME</td>
+        </tr>
+    </table>
+
+    <br><br>
+    <!-- 
+Cell padding is the space between the cell edges and the cell content.
+Cell spacing is the space between each cell.
+-->
+    <!--Rowspan & Colspan - Merging/Split of Rows & Cols-->
+    <table id="hello">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th colspan="3">Technology</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Naveen</td>
+                <td colspan="3">Java Script</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Mike</td>
+                <td>Hibernate</td>
+                <td>JDBC</td>
+                <td>MySQL</td>
+            </tr>
+            <tr>
+                <td rowspan="3">103</td>
+                <td rowspan="3">Mary</td>
+                <td colspan="3">Spring Framework</td>
+            </tr>
+            <tr>
+                <td colspan="3">Spring Boot</td>
+            </tr>
+            <tr>
+                <td colspan="3">Mongo DB</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Deepak</td>
+                <td colspan="2">WebFlux</td>
+                <td>micro services</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <img src="https://careers.coforge.com/images/Guy_new.png" alt="">
+</body>
+</html>

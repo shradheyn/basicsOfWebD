@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum(num1,num2)
+        {
+            var total=num1+num2;
+            document.write("The Sum of "+num1+" and "+num2+" is : "+total);
+        }
+        function getrectarea (length,breadth)
+        {
+            if(length>0 && breadth>0)
+            {
+                return length*breadth;
+            }
+            return 0;
+        }
+    </script>
+</head>
+<body>
+    <h1 style="color: blue;">java script functions demo</h1>
+    <hr>
+    <script>
+        sum(100,200);
+        document.write("<br>");
+        sum(500,600);
+        document.write("<br>");
+        sum(-5,25);
+    </script>
+    <h1 style="color: blue;">java script functions with return statements</h1>
+    <script>
+        var area=getrectarea(10,20);
+        document.write("<br>The Area of Rectangle is : "+area);
+        document.write("<br>The Area of Rectangle is : "+getrectarea(15,0));
+    </script>
+
+</body>
+</html>

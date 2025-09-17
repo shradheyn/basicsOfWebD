@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPs in JS</title>
+</head>
+<body>
+    <script>
+        class Employee{
+            #id;
+            #name;
+            #salary;
+            constructor(id,name,salary){
+                this.#id=id;
+                this.#name=name;
+                this.#salary=salary;
+            }
+
+            displayDetails(){
+                document.write("<br>********************");
+                document.write("<br>Employee ID: "+this.#id);
+                document.write("<br>Employee Name: "+this.#name);
+                this.salary=this.salary+(this.#salary*0.10);
+                document.write("<br>Employee Salary: "+this.#salary);
+                document.write("<br>********************");
+            }
+        }
+
+        var emp1=new Employee(101,"Shradhey",45000);
+        var emp2=new Employee(102,"Ankita",55000);
+        var emp3=new Employee(103,"Rohit",65000);
+
+        emp1.displayDetails();
+        emp2.displayDetails();
+        emp3.displayDetails();
+    </script>
+</body>
+</html>

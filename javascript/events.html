@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html events and dom css</title>
+    <script>
+        function test(){
+            document.getElementById("blr").innerHTML='Hello Bengaluru';
+        }
+        function myFunction(){
+            alert("Click Event generated")
+        }
+        function myFunction1(){
+            alert("Key Press Event generated")
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Eveents &DOM manipulations in CSS</h1>
+    <h2 onmouseover="style.color='red'" onmouseout="style.color='green'"> mouse over and out this text</h2>
+
+    <h2 id="blr">DOM programming in HTML</h2>
+    <input type="button" value="Click me" onclick="test()">
+    <input type="button" value="Click again" onclick="myFunction()">
+    <input type="text" name="username" id="username" onkeypress="myFunction1()">
+</body>
+</html>

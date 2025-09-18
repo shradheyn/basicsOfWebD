@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            /*The load() method loads data from a server and puts the
+             returned data into the selected element.*/
+            $("#div1").load("demo_test.txt");
+        });
+    });
+</script>
+
+<body>
+
+    <h1>Ajax Demo</h1>
+    <div id="div1">
+        <h2>Let jQuery AJAX Change This Text</h2>
+    </div>
+    <button>Get External Content</button>
+</body>
+
+</html>
